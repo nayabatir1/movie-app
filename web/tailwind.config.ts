@@ -9,9 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        curves: "url('/design.svg')",
       },
     },
     colors: {
@@ -20,6 +18,7 @@ const config: Config = {
       "rich-black": "#093545",
       "dark-slate-gray": "#224957",
       "maasstricht-blue": "#092C39",
+      white: "#ffffff",
     },
   },
   plugins: [],

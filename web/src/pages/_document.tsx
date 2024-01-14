@@ -7,6 +7,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <div className="fixed bottom-0 bg-curves w-full h-[111px] bg-no-repeat bg-cover	" />
       </body>
     </Html>
   );

@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 :root {
   --background: #093545;
   --background-start-rgb: 214, 219, 220;
@@ -12,9 +10,9 @@
 
 body {
   background-color: var(--background);
-  font-family: "Montserrat";
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 h1 {
