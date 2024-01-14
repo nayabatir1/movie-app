@@ -1,0 +1,13 @@
+{
+  "name": "full-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "web:dev": "pnpm --filter=web dev",
+    "api:dev": "pnpm --filter=api start:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
