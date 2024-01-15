@@ -9,5 +9,6 @@ export const envOptions: ConfigModuleOptions = {
     DATABASE_URL: joi.string().required(),
     PORT: joi.number().port().required(),
     JWT_SECRET: joi.string().required(),
+    API_HOST: joi.string().required(),
   }),
 };

@@ -17,11 +17,12 @@ model User {
 }
 
 model Movie {
-  id      String @id @default(auto()) @map("_id") @db.ObjectId
-  title   String
-  year    Int
-  imageId String @unique @db.ObjectId
-  image   File   @relation(fields: [imageId], references: [id])
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  year      String
+  fileId    String   @unique @db.ObjectId
+  file      File     @relation(fields: [fileId], references: [id])
+  createdAt DateTime @default(now())
 }
 
 model File {
