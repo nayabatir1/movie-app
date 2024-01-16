@@ -1,6 +1,6 @@
 import { ApiResponse } from "../../types/common";
 import http from "../../utils/http";
-import { SignInForm, SinginResponse } from "./types";
+import { SignInForm, SinginResponse } from "../../types/signin.types";
 
 export const signin = (payload: SignInForm) =>
   http.post<ApiResponse<SinginResponse>>("/auth/signin", payload);

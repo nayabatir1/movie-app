@@ -4,10 +4,10 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useTranslation } from "next-i18next";
 
-import { SignInForm } from "./types";
-import { useSignin } from "./signin.queries";
+import { SignInForm } from "../types/signin.types";
+import { useSignin } from "../api/queries/signin.queries";
 import { GetServerSideProps } from "next";
-import { AUTH_TOKEN_KEY } from "../../utils/constant";
+import { AUTH_TOKEN_KEY } from "../utils/constant";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const montserrat = Montserrat({

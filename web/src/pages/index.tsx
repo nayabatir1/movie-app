@@ -9,39 +9,12 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { AUTH_TOKEN_KEY } from "../utils/constant";
 import { useRouter } from "next/router";
 import { GetServerSideProps } from "next";
-import { useGetMovies } from "./movie/movie.queries";
+import { useGetMovies } from "../api/queries/movie.queries";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
 });
-
-const MoviesData = [
-  {
-    title: "Movie 1",
-    year: "2002",
-    url: "https://picsum.photos/200/300",
-    id: "1",
-  },
-  {
-    title: "Movie 1",
-    year: "2002",
-    url: "https://picsum.photos/200/300",
-    id: "2",
-  },
-  {
-    title: "Movie 1",
-    year: "2002",
-    url: "https://picsum.photos/200/300",
-    id: "3",
-  },
-  {
-    title: "Movie 1",
-    year: "2002",
-    url: "https://picsum.photos/200/300",
-    id: "4",
-  },
-];
 
 export const getServerSideProps: GetServerSideProps = async ({
   req,

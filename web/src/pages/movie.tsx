@@ -8,9 +8,13 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import { GetServerSideProps } from "next";
-import { AUTH_TOKEN_KEY } from "../../utils/constant";
-import { Movie } from "./types";
-import { useAddMovie, useFileUpload, useUpdateMovie } from "./movie.queries";
+import { AUTH_TOKEN_KEY } from "../utils/constant";
+import { Movie } from "../types/movies.types";
+import {
+  useAddMovie,
+  useFileUpload,
+  useUpdateMovie,
+} from "../api/queries/movie.queries";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 

@@ -1,7 +1,11 @@
 import { ApiResponse } from "../../types/common";
 import http from "../../utils/http";
-import { SignInForm, SinginResponse } from "../signin/types";
-import { AddMovieResponse, Image, Movie, MoviePayload } from "./types";
+import {
+  AddMovieResponse,
+  Image,
+  Movie,
+  MoviePayload,
+} from "../../types/movies.types";
 
 export const getAllMovies = (query: string) =>
   http.get<ApiResponse<AddMovieResponse>>("/movie?" + query);

@@ -5,8 +5,8 @@ import {
   getAllMovies,
   updateMovie,
   uploadFile,
-} from "./movie.request";
-import { MoviePayload } from "./types";
+} from "../requests/movie.request";
+import { MoviePayload } from "../../types/movies.types";
 
 export const useGetMovies = (page: number) =>
   useQuery({
