@@ -25,6 +25,7 @@ export class MovieService {
     const [count, docs] = await Promise.all([
       this.prisma.movie.count({}),
       this.prisma.movie.findMany({
+        include: { file: true },
         ...UtilService.paginationProps(query),
       }),
     ]);

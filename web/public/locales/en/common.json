@@ -1,0 +1,21 @@
+{
+  "my_movies": "My movies",
+  "logout": "Logout",
+  "signin": "Sign in",
+  "remember": "Remember me",
+  "login": "Login",
+  "email": "Email",
+  "password": "Password",
+  "edit": "Edit",
+  "newMovie": "Create a new movie",
+  "dropNew": "Drop an image here",
+  "dropUpdate": "Drop other image here",
+  "cancel": "Cancel",
+  "submit": "Submit",
+  "title": "Title",
+  "year": "Publishing year",
+  "next": "Next",
+  "prev": "Prev",
+  "emptyList": "Your movie list is empty",
+  "addMovie": "Add a new movie"
+}

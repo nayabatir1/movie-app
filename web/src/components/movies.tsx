@@ -2,22 +2,23 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { title } from "process";
 import { memo, useCallback } from "react";
-
-export type Movie = {
-  title: string;
-  year: string;
-  url: string;
-  id: string;
-};
+import { Movie } from "../pages/movie/types";
 
 function Movies(props: Movie) {
   const router = useRouter();
 
   const navigate = useCallback(() => {
-    const params = new URLSearchParams(props);
+    const { title, year, fileId, id, file } = props;
+    const params = new URLSearchParams({
+      title,
+      year,
+      fileId,
+      id,
+      url: file.url,
+    });
     const query = params.toString();
 
-    router.push("/movie?" + query);
+    router.push("/movie?" + query, undefined, { locale: router.locale });
   }, [props, router]);
 
   return (
@@ -26,7 +27,7 @@ function Movies(props: Movie) {
       onClick={navigate}
     >
       <Image
-        src={props.url}
+        src={props.file.url}
         width={1000}
         height={600}
         layout="responsive"

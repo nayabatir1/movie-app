@@ -1,0 +1,21 @@
+{
+  "my_movies": "Meine Filme",
+  "logout": "Abmelden",
+  "signin": "Anmelden",
+  "remember": "Erinnere dich an mich",
+  "login": "Einloggen",
+  "email": "E-Mail",
+  "password": "Passwort",
+  "edit": "Bearbeiten",
+  "newMovie": "Einen neuen Film erstellen",
+  "dropNew": "Bild hier ablegen",
+  "dropUpdate": "Anderes Bild hier ablegen",
+  "cancel": "Abbrechen",
+  "submit": "Senden",
+  "title": "Titel",
+  "year": "Veröffentlichungsjahr",
+  "next": "Weiter",
+  "prev": "Zurück",
+  "emptyList": "Deine Filmliste ist leer",
+  "addMovie": "Einen neuen Film hinzufügen"
+}
