@@ -118,7 +118,6 @@ function MovieDetails() {
     }
 
     const payload = {
-      id,
       title: data.title,
       year: data.year,
       fileId: newfileId,
